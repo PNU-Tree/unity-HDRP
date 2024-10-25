@@ -13,6 +13,7 @@ namespace Tree.Multiplay
         private List<string> connectionIds = new List<string>();
         private List<Component> streams = new List<Component>();
         private Dictionary<string, GameObject> dictObj = new Dictionary<string, GameObject>();
+        private RenderStreamingSettings settings;
 
         public override IEnumerable<Component> Streams => streams;
 

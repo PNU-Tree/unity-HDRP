@@ -6,7 +6,7 @@ using Unity.RenderStreaming;
 
 namespace Tree.Multiplay
 {
-    class MultiplayManager : MonoBehaviour
+    class MultiplaySample : MonoBehaviour
     {
         [SerializeField] SignalingManager renderStreaming;
         [SerializeField] GameObject prefabHost;
@@ -30,9 +30,9 @@ namespace Tree.Multiplay
                 SetUpHost();
                 serverStarted = true;
             } else {
-                var username =  UnityEngine.Random.Range(0, 99999).ToString("00000");
+                var username = UnityEngine.Random.Range(0, 99999).ToString("00000");
                 var connectionId = Guid.NewGuid().ToString();
-                // StartCoroutine(SetUpGuest(username, connectionId));
+                StartCoroutine(SetUpGuest(username, connectionId));
             }
         }
 

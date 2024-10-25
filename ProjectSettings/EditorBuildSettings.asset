@@ -9,5 +9,5 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 3db1837cc97a95e4c98610966fac2b0b
   m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 9cb1088d1beaa4cdba04639611f465a3, type: 2}
-    com.unity.renderstreaming.settings: {fileID: 11400000, guid: eaf3b6cfbb6864131ae8cfa8e1475706, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: cc1ffcceff4df401a9466502d7e2b284, type: 2}
+    com.unity.renderstreaming.settings: {fileID: 11400000, guid: 039337c008e9a5c44a60f957eae3e450, type: 2}

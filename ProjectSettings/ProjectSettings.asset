@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 8c247dec130b0432abda2a4e6b906250
+  productGUID: 6c16b7e9ae6104229bdeadd8f288fb55
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: HDRP
+  productName: unity-HDRP
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -669,14 +669,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: HDRP
+  metroPackageName: unity-HDRP
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: HDRP
+  metroApplicationDescription: unity-HDRP
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -746,10 +746,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 1db70e40-e8d5-48b7-8882-fa9ec8f4d072
+  cloudProjectId: c5d0200c-0c5a-4542-a869-2f5614c62d6a
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: HDRP
+  projectName: unity-HDRP 2024-10-25_15-10-57
   organizationId: laliddang
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

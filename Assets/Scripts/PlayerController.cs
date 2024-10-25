@@ -2,15 +2,16 @@ using UnityEngine;
 
 namespace Tree.Multiplay
 {
-    public class PlayerController : MonoBehaviour
-    {
-        [Header("Player")]
+	[RequireComponent(typeof(CharacterController))]
+	public class PlayerController : MonoBehaviour
+	{
+		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
-		public float MoveSpeed = 5.0f;
+		public float MoveSpeed = 6.0f;
 		[Tooltip("Sprint speed of the character in m/s")]
-		public float SprintSpeed = 7.0f;
+		public float SprintSpeed = 8.0f;
 		[Tooltip("Rotation speed of the character")]
-		public float RotationSpeed = 0.5f;
+		public float RotationSpeed = 1.0f;
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 5.0f;
 
@@ -36,9 +37,6 @@ namespace Tree.Multiplay
 		[Tooltip("What layers the character uses as ground")]
 		public LayerMask GroundLayers;
 
-		// [Header("Cinemachine")]
-		// [Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
-		// public GameObject CinemachineCameraTarget;
 		[Tooltip("How far in degrees can you move the camera up")]
 		public float TopClamp = 90.0f;
 		[Tooltip("How far in degrees can you move the camera down")]
@@ -105,9 +103,6 @@ namespace Tree.Multiplay
 
 				// clamp our pitch rotation
 				_cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, BottomClamp, TopClamp);
-
-				// Update Cinemachine camera target pitch
-				// CinemachineCameraTarget.transform.localRotation = Quaternion.Euler(_cinemachineTargetPitch, 0.0f, 0.0f);
 
 				// rotate the player left and right
 				transform.Rotate(Vector3.up * _rotationVelocity);
@@ -227,5 +222,5 @@ namespace Tree.Multiplay
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
 		}
-    }
+	}
 }
